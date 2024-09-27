@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brahmastra AI Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h2>Brahmastra</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Humanizer </a></li>
+                <li><a href="AI-detector.html">AI Detector</a></li>
+                <li><a href="#"><i class="fa-solid fa-language"></i>  Language  </a></li>
+                <li><a href="#"><i class="fa-regular fa-moon"></i>  Dark Mode   </a></li>
+                <li><a href="support.html"><i class="fa-regular fa-envelope"></i>   Support & Feedback   </a></li>
+                <li><a href="#">  <i class="fa-solid fa-gear"></i>  Settings </a></li>
+            </ul>
+            <div class="free-plan">
+                <p>FREE PLAN</p>
+                <p>Your current plan is free. Need more functions?</p>
+                <button>Upgrade plan</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Brahmastra</h1>
+                <p>Brahmastra rewrites AI content into human-like text. Guaranteed plagiarism-free & undetectable by AI detectors.</p>
+            </header>
+            <div class="model-selector">
+                <label>Select your preferred model</label>
+                <button class="model-btn active">Arjun</button>
+                <button class="model-btn">Karna</button>
+            </div>
+            <textarea id="inputText" placeholder="Enter the text that you want to make it unique and human"></textarea>
+            <div class="action-buttons">
+                <button class="paste-btn" id="humanizeBtn">Humanize</button>
+                <button class="sample-btn">Try sample text</button>
+            </div>
+
+            <!-- Output Section -->
+            <div id="outputSection" class="output-section">
+                <h3>Your New Undetectable Content:</h3>
+                <div id="outputBox" class="output-box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
